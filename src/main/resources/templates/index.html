@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>扫码支付</title>
+</head>
+<body>
+<h1>请微信扫码支付</h1>
+<h3>qrCode=<span th:text="${session.qrCode}"></span></h3>
+<img th:src="${session.url+session.qrCode}" />
+
+</body>
+</html>
